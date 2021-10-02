@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Login</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="loginForm/css/style.css">
+		<script type="text/javascript" src="loginForm/js/login.js" async></script>
+	</head>
+
+	<body>
+		<div class="login-box" id="loginbox">
+			<h1>LOGIN</h1>
+			<div class="input-box">
+				<i class="fa fa-user-circle-o"></i>
+				<input type="text" placeholder="Username" id="user">
+			</div>
+
+			<div class="input-box">
+				<i class="fa fa-key"></i>
+				<input type="password" placeholder="Password" id="password" autocomplete="off">
+				<span class="eye" id="eye-icon">
+					<i class="fa fa-eye" id="hide-eye"></i>
+					<i class="fa fa-eye-slash" id="hide-eye-slash"></i>
+				</span>				
+			</div>
+
+			<button type="button" class="login-button" onclick="loginClick()">Login</button>
+		</div>
+
+		<div class="login-box" id="welcome">
+			<h1>Welcome</h1>
+			<h1 id="username">Username</h1>
+			<p><a href="#" onclick="logoutButton()">Log Out</a></p>
+		</div>
+	</body>
+</html>
